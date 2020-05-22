@@ -6,24 +6,24 @@
 /*   By: humanfou <humanfou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 11:18:04 by humanfou          #+#    #+#             */
-/*   Updated: 2020/05/22 00:20:00 by humanfou         ###   ########.fr       */
+/*   Updated: 2020/05/22 21:49:37 by humanfou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 2
+#  define BUFFER_SIZE 42
 # endif
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
+# include <fcntl.h>
 
 int		get_next_line(int fd, char **line);
 char	*ft_strchr(const char *s, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 size_t	ft_strlen(const char *s);
-char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strnew(size_t size);
 void	*ft_memset(void *b, int c, size_t len);
 char	*ft_strdup(const char *s);
